@@ -8,6 +8,9 @@
 
 *Which privacy features do you need from the phone?*
 
+- Authentication for users, confirmation by mail
+
+
 ## Adoptions, Scalability and Availability
 
 *What kind of traffic patterns do you expect to see?*
