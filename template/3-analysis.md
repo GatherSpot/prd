@@ -13,14 +13,14 @@ GatherSpot is designed to address these common challenges faced by people when i
 
 Here is an analysis of why such an app would be useful and the problems it aims to solve:
 
-- 1. Fragmented communication and difficult spreading of information
+- Fragmented communication and difficult spreading of information
 
     - Individuals: People often use multiple platforms (social media, email, messaging apps) to organize and discuss events. This can lead to fragmented communication and important details being overlooked.
     - Organizers: Universities, clubs, and organizations face even more complexity, with communication spread across various channels and platforms. This can lead to inefficiencies and miscommunications.
 
     Our app centralizes everything from event search with filtering based on location or interests, registration and communication with other participants.
 
-- 2. Inefficient Attendance Management:
+- Inefficient Attendance Management:
 
     - Individuals: For smaller gatherings, manually tracking attendance can be cumbersome and prone to errors.
     - Large-Scale Organizers: Managing attendance for large events involves complex logistics, such as ticketing, capacity planning, and    
@@ -28,7 +28,7 @@ Here is an analysis of why such an app would be useful and the problems it aims 
    
    Our app offers NFC technology to check attendance which is a way to prove one's identity.
 
-- 3. Lack of Post-Event Feedback:
+- Lack of Post-Event Feedback:
 
     - Individuals: Gathering feedback from attendees informally can result in limited insights and missed opportunities for improvement.
     - Organizers: Structured post-event feedback is crucial for continuous improvement but is often difficult to collect and analyze effectively.
