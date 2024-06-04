@@ -17,7 +17,7 @@ GatherSpot primarily targets individual users who want to improve how they organ
 The goal of our Minimum Viable Product (MVP) is to enhance the user experience by incorporating convenience features.
 Additionally, we aspire to make GatherSpot suitable not only for individuals but also for larger entities such as universities, clubs, and organizations. A long-term objective is to make them use the app to inform users of their large-scale upcoming events. To achieve this objective, we will need to update the code such that:
 
- -  It enables them having their own databases and making them self-hostable. 
+ -  It enables them to have their own databases and making them self-hostable. 
 
  -  It implements more robust authentication methods beyond email addresses and 2FA, to ensure security and reliability (proof someone has the right to access such events from these entities).
 
