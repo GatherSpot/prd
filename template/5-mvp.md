@@ -83,7 +83,7 @@ We expect the typical patterns and scenarios to happen like this:
 
 5. **User story for IOS users:**
 
-“As the owner of an IOS device, I still want to be able to use the app so that I can also benefit from the app features”
+    - “As the owner of an IOS device, I still want to be able to use the app so that I can also benefit from the app features”
 
 
 ## Success Criteria
