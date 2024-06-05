@@ -3,35 +3,48 @@
 ## Frontend
 
 **General Implementation framework:**
+
 The app will be developed in Kotlin, optimized for Android, and will use the Model-View-ViewModel (MVVM) architecture. This approach will ensure a structured and efficient management of the app’s UI and business logic. 
 
 **Navigation framework:** 
+
 The navigation for the app will be coded using both the standard Android Library android.navigation:navigation-ui and the Compose standard library android.navigation:navigation-compose. The Compose framework defines the top level destination and the navigation within composable context. The Android Standard Library can be used outside of the scope of Composable in particular when using standard Alert Dialog outside the scope of composable.
 
 **UI framework:**
+
 The app UI will be coded using the Jetpack Compose library. This allows for many interconnected components to work together. In addition this helps ensuring the longevity of the app because of the continuous support of Jetpack Compose and easy update to later version by only changing the bom.
 
 **Functionality specific framework:**
+
 Standard libraries are used to perform specific tasks: 
 The Google maps library is used to provide GPS navigation. The zxing library is used for scanning QR codes. The accompanist library is used to request permissions and privileges to the Android OS.
 
 **Dynamic UI Rendering Strategy:**
+
 The data layer provides method for fetching both remotely and locally data. The ViewModel is tasked with synthesizing the data and exposing fragments to be displayed to the View. The viewModel gets informed by the view any times events susceptible of changing the fragments happen.
 
-****Top Level Destinations:****
+***Top Level Destinations:***
+
 The top level destinations are the destination accessible either accessible through the bottom bar of the app or that are part of mandatory user flows when opening the app. 
- **"Login" and "Sign Up":** These screens are part of mandatory user flows. When opening the app for the first time the user isn’t signed in and cannot access any other screen without completing one of the flows associated with these destinations.
+
+ **"Login" and "Sign Up":**
+ 
+These screens are part of mandatory user flows. When opening the app for the first time the user isn’t signed in and cannot access any other screen without completing one of the flows associated with these destinations.
 
 **Chats:**
+
 Lists all the chats we can access
 
 **Events:**
+
 Lists Events that we can interact with. This screen contains 5 tabs to show different subsets of events: Mine for events organized by the user, Feed for events matching the settings of the profile, Planned for future events the user registered to, Followed for events organized by people followed by the user and Attended for passed events that were attended.
 
 **Map:**
+
 Browse a map on which the Events are shown.
 
 **Profile:**
+
 Display one’s own profile and its editing options
 
 
@@ -40,9 +53,11 @@ Display one’s own profile and its editing options
 ## Backend
 
 **Application Logic:**
+
 The backend server will host all necessary application logic, enabling the client application to access and consume data from the Gatherspot Firebase server. It will handle communications between different personas
 
 **Framework:**
+
 The backend is comprised of tools provided by google Firebase. This includes Firestore Database for storing data into files and collections but also authentification to provide functions to add Users, authenticate as a user and verify a user with email and Storage used to reference and store big files such as images.
 
 
@@ -52,18 +67,21 @@ The backend is comprised of tools provided by google Firebase. This includes Fir
 We will use a remote Firebase server and a local Room LiteSQL database as our Data Layer.
 
 **Profile:**
+
 Purpose: Manages data specific to a user that is meant to be visible by other users.
 Each profile is stored as its own document with id « uid » in a collection "profiles". 
 
 Fields: uid (Primary key): uid of the authentication user corresponding to the profile. ; userName (unique); Bio; Image; Interests
 
 **Event:**
+
 Purpose: Organize gatherings that users can take part in
 Each event is stored as its own document with id « id » in a collection "events".
 
 Fields: Id (Primary key) ; Title; Description; eventStartDate; eventEndDate; timeBeginning; timeEnding; attendanceMaxCapacity; attendanceMinCapacity; inscriptionLimitDate; inscriptionLimitTime; categories; organizerID; registeredUsers; finalAttendees; image
 
 **Rating:**
+
 Purpose: Collect user data about how well a passed event went, provide feedback on how well an event was rated as well as how well an organizer was rated in the past.
 Individual rating by a user: with uid uid  for the event: with id eventID is stored in the collection: « event_ratings/$eventID/attendee_ratings » as a document with id: $uid and field: rating. 
 
