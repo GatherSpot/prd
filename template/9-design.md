@@ -2,7 +2,7 @@
 
 ## Frontend
 
-General Implementation framework : 
+*General Implementation framework : *
 The app will be developed in Kotlin, optimized for Android, and will use the Model-View-ViewModel (MVVM) architecture. This approach will ensure a structured and efficient management of the app’s UI and business logic. 
 
 Navigation framework : 
