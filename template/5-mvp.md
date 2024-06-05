@@ -173,10 +173,10 @@ By systematically tracking and analyzing these metrics, we can determine the suc
 
 *How should these be eventually integrated and in what sequence.*
 
-As the MVP muste be viable and minimal, here are the feature we believe do not belong in it:
+As the MVP must be viable and minimal, here are the feature we believe do not belong in it:
 
 
-   -  **Gamification elements**
+   -  **Gamification**
 
 
       Gamification involves incorporating game-like elements such as badges, points, leaderboards, and rewards to increase user engagement and make the app more enjoyable. Users can earn badges for participating in events, accumulate points for certain actions, and see their rankings on leaderboards. Currently, we only rate organizers and we believe it is enough for the product to be viable.
@@ -195,24 +195,7 @@ As the MVP muste be viable and minimal, here are the feature we believe do not b
       - Step 3: Add leaderboards to foster friendly competition among users, showing top event organizers or most active participants.
 
 
-   - **Event Sponsorship:**
-
-
-      Event sponsorship feature would enable organizers to guarantee a visibilty for the events they create. It would also be a way for the app to generate revenues. We decided to exclude it from the MVP because implementing a robust system for managing sponsorshipsrequires significant development effort. It involves the creation of a backend infrastructure to handle sponsorship agreements as well as designing a user-friendly interface for organizers to manage their sponsorship deals.
-
-
-      - **Integration strategy**:
-
-
-      - Step 1: Conduct market research to identify potential sponsors who align with the nature of events hosted or promoted through GatherSpot. This can only be done after the product has reached a certain level of success related to engagement metrics and user penetration.
-
-   
-      - Step 2: Develop sponsorship proposal packages outlining the benefits and opportunities available to sponsors.
-
-
-      - Step 3: Reach out to potential sponsors to discuss partnership opportunities and negotiate sponsorship agreements.
-      
-   - **Recomandation system**
+   - **Recomendation system**
 
 
       A recommendation system is designed to suggest events to users based on their past behavior. It leverages algorithms to analyze user data and provide personalized event suggestions, enhancing user engagement and satisfaction. Even though it would be a nice feature for the app, building an effective recommendation system involves developing complex algorithms, collecting and processing large amounts of data, and continuously fine-tuning the recommendations based on user feedback. This requires significant resources and time.
@@ -227,13 +210,28 @@ As the MVP muste be viable and minimal, here are the feature we believe do not b
          - Step 1: Gradually collect data on user behavior, such as the types of events they attend, their interactions, and their preferences keeping in mind data we have to ensure data privacy and compliance with regulations.
 
 
-         - Step 2: Start with collaborative filtering which is easier to implement and based on the construction of a user-interaction matrix basd on data previously collected. For user-based collaborative filtering, recommend events that similar users have attended or shown interest in. For item-based collaborative filtering, recommend events similar to those a user has interacted with. 
+         - Step 2: Start with collaborative filtering which is easier to implement and based on the construction of a user-interaction matrix using data previously collected. For user-based collaborative filtering, recommend events that similar users have attended or shown interest in. For item-based collaborative filtering, recommend events similar to those a user has interacted with. 
 
 
          - Step 3: Evaluate the performance of the collaborative filtering system using appropriate metrics such as precision, recall, or Mean Average Precision (MAP). Repeat all this sequence until having satisfactory results (MAP score > 0.5 would be great)
 
 
+   - **Event Sponsorship:**
 
 
+      Event sponsorship feature would enable organizers to guarantee a visibility for the events they create. It would also be a way for the app to generate revenues. We decided to exclude it from the MVP because implementing a robust system for managing sponsorships requires significant development effort. It involves the creation of a backend infrastructure to handle sponsorship agreements as well as designing a user-friendly interface for organizers to manage their sponsorship deals.
 
-Overall, all these 
+
+      - **Integration strategy**:
+
+
+      - Step 1: Conduct market research to identify potential sponsors who align with the nature of events hosted or promoted through GatherSpot. This can only be done after the product has reached a certain level of success related to engagement metrics and user penetration.
+
+   
+      - Step 2: Develop sponsorship proposal packages outlining the benefits and opportunities available to sponsors.
+
+
+      - Step 3: Reach out to potential sponsors to discuss partnership opportunities and negotiate sponsorship agreements.
+      
+
+Starting with gamification, then incorporating a recommender system, and finally introducing event sponsorship makes sense, as we aim to create the best possible product to attract potential sponsors. By prioritizing these features in this sequence, we ensure that GatherSpot evolves into a comprehensive and compelling platform that not only delights users but also offers tangible benefits to potential sponsors, thereby increasing our chances of securing valuable sponsorship deals.
