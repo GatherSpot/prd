@@ -91,37 +91,79 @@ We expect the typical patterns and scenarios to happen like this:
 The success of the MVP for the event application will be evaluated based on several key metrics and qualitative assessments specific to the event management and participation context:
 
 1. **User Penetration:**
+
+
    - **Active Users:** Measure the number of active users on the app, focusing on daily and monthly active user metrics, particularly tracking how many users regularly create or join events.
+
+
    - **User Growth Rate:** Track the growth rate of new user registrations over time, with particular attention to spikes around event promotions.
+
+
    - **Retention Rate:** Analyze user retention rates by monitoring how many users continue to use the app for event creation and participation after their initial registration over specified periods (e.g., 1 week, 1 month, 3 months).
 
 2. **Quality / Satisfaction:**
+
+
    - **User Satisfaction:** Collect user feedback through post-event surveys, app ratings, and reviews to gauge overall user satisfaction with event management features.
+
+
    - **Net Promoter Score (NPS):** Utilize the NPS metric to understand how likely users are to recommend the app to others for event creation and participation.
+
+
    - **Customer Support Requests:** Monitor the number and nature of customer support requests related to event creation, management, and participation to identify and address common issues or pain points.
+
+
    - **Error Rates:** Track the frequency and types of errors encountered by users, particularly during event registration and management processes, to improve app stability and performance.
 
 3. **Engagement Metrics:**
+
+
    - **Session Length:** Measure the average duration of user sessions, focusing on time spent on event creation, management, and browsing/joining events.
+
+
    - **Event Participation:** Monitor the number of events created and the participation rates in these events, including metrics like RSVPs, check-ins, and active participation during events.
+
+
    - **Feature Usage:** Analyze which event management features (e.g., calendar integration, reminders, ticketing) are most frequently used to understand user preferences and improve less-used features.
 
 4. **Business Metrics:**
+
+
    - **Revenue (if applicable):** Track revenue generated through app features such as event fees, ticket sales, or premium subscriptions for advanced event management tools.
+
+
    - **Customer Acquisition Cost (CAC):** Calculate the cost to acquire each new user who creates or joins events and compare it to industry benchmarks.
+
+
    - **Customer Lifetime Value (CLV):** Estimate the total revenue expected from a user over their entire relationship with the app, focusing on repeat event creators and frequent event participants.
 
+
 5. **Progress in Discussions with Ecosystem Partners / Investors / Customers:**
+
+
    - **Partnerships:** Monitor progress in forming strategic partnerships with event organizers, venues, and service providers that can enhance the app’s functionality or market reach.
+
+
    - **Investor Engagement:** Track interest and engagement from potential investors, including meetings held, feedback received, and investment commitments, particularly focusing on investors with a background in event management technologies.
+
+
    - **Customer Acquisition:** Evaluate the effectiveness of marketing and sales efforts in acquiring early customers, especially key target groups such as professional event organizers and influential community leaders.
 
+
 6. **Technical Performance:**
+
+
    - **Uptime and Reliability:** Ensure high levels of app uptime and reliability, aiming for minimal downtime and quick recovery from any issues, especially during peak event registration periods.
+
+
    - **Scalability:** Assess the app’s ability to handle increased traffic and user load, particularly during event promotion periods and on the days of major events.
+
+
    - **Response Time:** Measure the app’s response times, striving to maintain low latency for an optimal user experience, especially during critical actions like event registration and check-in.
 
+
 By systematically tracking and analyzing these metrics, we can determine the success of the MVP, identify areas for improvement, and make data-driven decisions to enhance the app’s functionality and user experience in the event management domain.
+
 
 ## Features Outside the Scope
 
@@ -131,13 +173,67 @@ By systematically tracking and analyzing these metrics, we can determine the suc
 
 *How should these be eventually integrated and in what sequence.*
 
-
- To achieve this objective, we will need to update the code such that:
-
- -  It enables them to have their own databases and making them self-hostable. 
-
- -  It implements more robust authentication methods beyond email addresses and 2FA, to ensure security and reliability (proof someone has the right to access such events from these entities).
-
- - It allows universities, clubs, and organizations to tailor the app to their specific needs and integrate it seamlessly into their existing systems.
+As the MVP muste be viable and minimal, here are the feature we believe do not belong in it:
 
 
+   -  **Gamification elements**
+
+
+      Gamification involves incorporating game-like elements such as badges, points, leaderboards, and rewards to increase user engagement and make the app more enjoyable. Users can earn badges for participating in events, accumulate points for certain actions, and see their rankings on leaderboards. Currently, we only rate organizers and we believe it is enough for the product to be viable.
+      Building a gamification system requires designing and implementing various elements such as point tracking, badge awarding mechanisms, and leaderboards. This adds complexity and time to the development process. Introducing gamification too early may shift focus from the core functionalities.
+
+
+      - **Integration strategy**:
+
+
+      - Step 1: Start with a basic rewards system where users can earn points for specific actions like attending events or providing feedback.
+
+
+      - Step 2: Introduce badges and achievements for reaching milestones, such as attending a certain number of events or organizing popular events.
+   
+
+      - Step 3: Add leaderboards to foster friendly competition among users, showing top event organizers or most active participants.
+
+
+   - **Event Sponsorship:**
+
+
+      Event sponsorship feature would enable organizers to guarantee a visibilty for the events they create. It would also be a way for the app to generate revenues. We decided to exclude it from the MVP because implementing a robust system for managing sponsorshipsrequires significant development effort. It involves the creation of a backend infrastructure to handle sponsorship agreements as well as designing a user-friendly interface for organizers to manage their sponsorship deals.
+
+
+      - **Integration strategy**:
+
+
+      - Step 1: Conduct market research to identify potential sponsors who align with the nature of events hosted or promoted through GatherSpot. This can only be done after the product has reached a certain level of success related to engagement metrics and user penetration.
+
+   
+      - Step 2: Develop sponsorship proposal packages outlining the benefits and opportunities available to sponsors.
+
+
+      - Step 3: Reach out to potential sponsors to discuss partnership opportunities and negotiate sponsorship agreements.
+      
+   - **Recomandation system**
+
+
+      A recommendation system is designed to suggest events to users based on their past behavior. It leverages algorithms to analyze user data and provide personalized event suggestions, enhancing user engagement and satisfaction. Even though it would be a nice feature for the app, building an effective recommendation system involves developing complex algorithms, collecting and processing large amounts of data, and continuously fine-tuning the recommendations based on user feedback. This requires significant resources and time.
+
+
+      - **Integration strategy**:
+
+
+         We have already implemented basic filtering based on interests and location. 
+
+
+         - Step 1: Gradually collect data on user behavior, such as the types of events they attend, their interactions, and their preferences keeping in mind data we have to ensure data privacy and compliance with regulations.
+
+
+         - Step 2: Start with collaborative filtering which is easier to implement and based on the construction of a user-interaction matrix basd on data previously collected. For user-based collaborative filtering, recommend events that similar users have attended or shown interest in. For item-based collaborative filtering, recommend events similar to those a user has interacted with. 
+
+
+         - Step 3: Evaluate the performance of the collaborative filtering system using appropriate metrics such as precision, recall, or Mean Average Precision (MAP). Repeat all this sequence until having satisfactory results (MAP score > 0.5 would be great)
+
+
+
+
+
+Overall, all these 
