@@ -195,7 +195,7 @@ As the MVP must be viable and minimal, here are the feature we believe do not be
       - Step 3: Add leaderboards to foster friendly competition among users, showing top event organizers or most active participants.
 
 
-   - **Recomendation system**
+   - **Recommendation system**
 
 
       A recommendation system is designed to suggest events to users based on their past behavior. It leverages algorithms to analyze user data and provide personalized event suggestions, enhancing user engagement and satisfaction. Even though it would be a nice feature for the app, building an effective recommendation system involves developing complex algorithms, collecting and processing large amounts of data, and continuously fine-tuning the recommendations based on user feedback. This requires significant resources and time.
@@ -219,7 +219,7 @@ As the MVP must be viable and minimal, here are the feature we believe do not be
    - **Event Sponsorship:**
 
 
-      Event sponsorship feature would enable organizers to guarantee a visibility for the events they create. It would also be a way for the app to generate revenues. We decided to exclude it from the MVP because implementing a robust system for managing sponsorships requires significant development effort. It involves the creation of a backend infrastructure to handle sponsorship agreements as well as designing a user-friendly interface for organizers to manage their sponsorship deals.
+      Event sponsorship feature would enable organizers to guarantee visibility for the events they create. It would also be a way for the app to generate revenues. We decided to exclude it from the MVP because implementing a robust system for managing sponsorships requires significant development effort. It involves the creation of a backend infrastructure to handle sponsorship agreements as well as designing a user-friendly interface for organizers to manage their sponsorship deals.
 
 
       - **Integration strategy**:
