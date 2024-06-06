@@ -41,6 +41,7 @@ The target personas for the product are the following:
 
 Event Organizers are the key personas because they will use GatherSpot's comprehensive features for event creation, management, and feedback. The app development and feature prioritization should heavily insist on their usage patterns and feedback.
 
+
 **High Level Scenarios**
 
 We expect the typical patterns and scenarios to happen like this:

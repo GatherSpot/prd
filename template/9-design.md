@@ -39,7 +39,7 @@ The data layer provides method for fetching both remotely and locally data. The 
 The top level destinations are the destination accessible either accessible through the bottom bar of the app or that are part of mandatory user flows when opening the app. 
 
 
-**Login and Sign Up:**
+**Login and SignUp:**
  
 
 These screens are part of mandatory user flows. When opening the app for the first time the user isn’t signed in and cannot access any other screen without completing one of the flows associated with these destinations.
@@ -137,11 +137,11 @@ Each of the profile uid are stored in the document located at "ID_LIST/FOLLOWERS
 **Chat message:**
 
 
-Purpose: Allow for participants and organizers to communicate through a dedicated chat channel
-In the case of a message sent by user $uid in the chat of the event with id EventID
-Each message is stored in its own document in a collection "chatMessages/$eventID/messages"
+Purpose: Allow for participants and organizers to communicate through a dedicated chat channel.
+In the case of a message sent by user with id "uid" in the chat of the event with id "eventID",
+it will be stored in its own document in a collection "chatMessages/eventID/messages/id".
 
-Fields: message, senderID(takes value $uid), timestamp
+Fields: message, senderID(takes value uid), timestamp
  
 
 **How is it shared/copied/cached?**
@@ -165,19 +165,19 @@ Chat messages should never be modified and are each stored in separate document.
 **Single exclusive write access**
 
 
-Documents: profiles/$uid, ID_LIST/following/$uid and event_ratings/**/attendees_ratings/$uid:  only allow the user corresponding to uid to write into that file.
+Documents: profiles/uid, ID_LIST/FOLLOWING/uid and event_ratings/***/attendees_ratings/uid only allow the user corresponding to uid to write into that file.
 
 
 **Share write access**
 
 
-Documents: /events/X should be in theory only be modified by the users with uid matching the field organizerID in document /events/X with the exception of the fields: finalAttendee and registeredUsers which allow any user to append themselves to the list. Hence one user may have all writing privileges over that document when the rest may only have specific append privileges on existing file.
+Documents: Events in /events/ should be in theory only be modified by the users with uid matching the field organizerID in the documents with the exception of the fields: finalAttendee and registeredUsers which allow any user to append themselves to the list. Hence one user may have all writing privileges over that document when the rest may only have specific append privileges on existing file.
 
 
 **Automated writes**
 
 
-Documents: /ID_LIST/FOLLOWERS/** , /organizer_ratings/** , /event_ratings/** are all made to maintain coherence with other writes that are initiated by an end point persona-user. A system automated sudo user could have an exclusive privilege to write the fields of these files to maintain coherence of the database
+Folders: /ID_LIST/, /organizer_ratings/ and /event_ratings/ are all made to maintain coherence with other writes that are initiated by an end point persona-user. A system automated sudo user could have an exclusive privilege to write the fields of these files to maintain coherence of the database.
 
 
 ## Infrastructure and Deployment
