@@ -39,7 +39,7 @@ The data layer provides method for fetching both remotely and locally data. The 
 The top level destinations are the destination accessible either accessible through the bottom bar of the app or that are part of mandatory user flows when opening the app. 
 
 
- **"Login" and "Sign Up":**
+**Login and Sign Up:**
  
 
 These screens are part of mandatory user flows. When opening the app for the first time the user isn’t signed in and cannot access any other screen without completing one of the flows associated with these destinations.
@@ -89,46 +89,57 @@ We will use a remote Firebase server and a local Room LiteSQL database as our Da
 **Profile:**
 
 Purpose: Manages data specific to a user that is meant to be visible by other users.
-Each profile is stored as its own document with id « uid » in a collection "profiles". 
+Each profile is stored as its own document with primary key "uid" in a collection "profiles". 
 
 Fields: uid (Primary key): uid of the authentication user corresponding to the profile. ; userName (unique); Bio; Image; Interests
 
+
 **Event:**
 
+
 Purpose: Organize gatherings that users can take part in
-Each event is stored as its own document with id « id » in a collection "events".
+Each event is stored as its own document with primary key "id" in a collection called "events".
+
 
 Fields: Id (Primary key) ; Title; Description; eventStartDate; eventEndDate; timeBeginning; timeEnding; attendanceMaxCapacity; attendanceMinCapacity; inscriptionLimitDate; inscriptionLimitTime; categories; organizerID; registeredUsers; finalAttendees; image
 
+
 **Rating:**
 
+
 Purpose: Collect user data about how well a passed event went, provide feedback on how well an event was rated as well as how well an organizer was rated in the past.
-Individual rating by a user: with uid uid  for the event: with id eventID is stored in the collection: « event_ratings/$eventID/attendee_ratings » as a document with id: $uid and field: rating. 
+Individual rating by a user with id "uid" for the event with id eventID. It is stored in the collection: "event_ratings/$eventID/attendee_ratings" as a document with id: $uid and field: rating. 
 
-The individual ratings in attendees_ratings are aggregated into a document stored in the collection: « event_ratings » in document with id: « eventID » with fields: average (representing the average of ratings for the event), count (representing the number of ratings for the event), and eventID  This constitutes the event rating.
 
-The event ratings get aggregated into an organizer rating in a document stored in the collection « organizer_ratings » where the id of the document is the field « organizerID » of the event with id « eventID » and the fields are: nEvents (the number of events organized by the organizer), nRatings (the number of ratings received on all events organized by the organizer), overallAverage (average of all ratings received on all events organized by the organizer)
+The individual ratings in attendees_ratings are aggregated into a document stored in the collection: "event_ratings" in document with id: "eventID" with fields: average (representing the average of ratings for the event), count (representing the number of ratings for the event), and eventID. This constitutes the event rating.
+
+
+The event ratings get aggregated into an organizer rating in a document stored in the collection "organizer_ratings" where the id of the document is the field "organizerID" of the event with id "eventID" and the fields are: nEvents (the number of events organized by the organizer), nRatings (the number of ratings received on all events organized by the organizer), overallAverage (average of all ratings received on all events organized by the organizer)
 This constitutes an organizer rating.
+
 
 **Following:**
 
 
 Purpose: List all the profiles followed by a user
-In the case of The user with uid: uid following the profiles with uid Fuid1, Fuid2 ,…, Fuidk
-Each of the profiles (Fuidj with [1,k]) followed are stored in their own document with id « Fuidj » in collection « ID_LIST/FOLLOWING/$uid »
+In the case of the user with id "uid" following the profiles with uids $uid_1$, $uid_2$ , …, $uid_k$
+Each of the profiles followed are stored in their own document with id $uid_i$ in the collection "ID_LIST/FOLLOWING/uid"
+
 
 **Followers:**
 
 
 Purpose: List all the users that follow a particular profile
-In the case of The user with uid: uid being followed by the profiles with uid Fuid1, Fuid2 ,…, Fuidk
-Each of the profiles (Fuidj with [1,k]) followed are stored in their own document with id « Fuidj » in collection « ID_LIST/FOLLOWERS/uid »
+In the case of the user with id "uid" being followed by the profiles with uids $uid_1$, $uid_2$ , …, $uid_k$
+Each of the profile uid are stored in the document located at "ID_LIST/FOLLOWERS/uid"
 
 
 **Chat message:**
+
+
 Purpose: Allow for participants and organizers to communicate through a dedicated chat channel
 In the case of a message sent by user $uid in the chat of the event with id EventID
-Each message is stored in its own document in a collection « chatMessages/$eventID/messages » 
+Each message is stored in its own document in a collection "chatMessages/$eventID/messages"
 
 Fields: message, senderID(takes value $uid), timestamp
  
