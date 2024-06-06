@@ -18,10 +18,6 @@ In the POC, the only way to store data was on Firebase. We need to adapt and ext
 
 By implementing these solutions, we ensure that GatherSpot remains flexible and user-friendly, accommodating the diverse data storage needs of various organizations while maintaining the simplicity and reliability that users expect. We also aim to cater to the needs of large entities requiring stringent data security and privacy-conscious users seeking greater control over their data.
 
-In the GatherSpot MVP, we decided to support self-hosting of data by different entities. The idea is to enable institutions to have their own instance of the GatherSpot app, hosted on their servers.Large organizations may require high levels of data security and control. Self-hosting ensures that sensitive information is stored within the organization’s own infrastructure, minimizing the risk of external data breaches.
-
-
-In the POC, the only way to store data was on Firebase. We need to adapt and extend the app so that an organization can choose where it saves its data. The outcome should stay as simple as possible so that the organization will use GatherSpot.
 
 ![High-Level Description of the architecture](prd_diagram.png)
 
