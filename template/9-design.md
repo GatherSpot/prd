@@ -122,15 +122,15 @@ This constitutes an organizer rating.
 
 
 Purpose: List all the profiles followed by a user
-In the case of the user with id "uid" following the profiles with uids $uid_1$, $uid_2$ , …, $uid_k$
-Each of the profiles followed are stored in their own document with id $uid_i$ in the collection "ID_LIST/FOLLOWING/uid"
+In the case of the user with id "uid" following the profiles with uids $uid_1$, $uid_2$ , …, $uid_k$.
+Each of the profiles followed are stored in their own document with id $uid_i$ in the collection "ID_LIST/FOLLOWING/uid".
 
 
 **Followers:**
 
 
-Purpose: List all the users that follow a particular profile
-In the case of the user with id "uid" being followed by the profiles with uids $uid_1$, $uid_2$ , …, $uid_k$
+Purpose: List all the users that follow a particular profile.
+In the case of the user with id "uid" being followed by the profiles with uids $uid_1$, $uid_2$ , …, $uid_k$.
 Each of the profile uid are stored in the document located at "ID_LIST/FOLLOWERS/uid"
 
 
