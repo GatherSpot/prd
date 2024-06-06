@@ -13,7 +13,7 @@ In the GatherSpot MVP, we decided to support self-hosting of data by different e
 
 In the POC, the only way to store data was on Firebase. We need to adapt and extend the app so that an organization can choose where it saves its data. The outcome should stay as simple as possible so that the organization will use GatherSpot.
 
-![Example Image](prd_diagram.png)
+![High-Level Description of the architecture](prd_diagram.png)
 
 
 The remaining features from the MVP can be implemented directly within our app without much trouble.
