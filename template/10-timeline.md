@@ -41,4 +41,4 @@ For milestone 4, we can start selling hosting by setting up firebase for the cus
 
 ## Maintenance and Upkeep
 
-Each server hosted by us will have a garenteed revenue, as we only host for paying organisers, and don't expect revenue from participants, so server maintenance should not be a concern. Depending on who we partner with, we could go open source to get the community involved, or we can charge for custom functionality and tailored experience for each person.
+Each server hosted by us will have a garenteed revenue, as we only host for paying organisers, and don't expect revenue from participants, so server maintenance should not be a concern. Depending on who we partner with, we could go open source to get the community involved, or we can charge for custom functionality and tailored experience for each partner.
