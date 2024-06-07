@@ -1,44 +1,73 @@
-# Timeline
+# Timeline/Resource Planning
 
-## Execution Roadmap
-We decided to define four milestones, that should be of two weeks each, of how we want to developp the mvp.
-Each milestone will contain at least one UI element, one backend element, and a documentation element to make it easier to distribute and parallelize the work.
 
-#### Milestone 1
-- Make app database agnostic (support both firebase and PostgreSQL)
-- Write documentation to deploy easily on firebase Spark plan (any person confortable with a computer should be able to do it)
-- First design of the during event screen
-- Write clearly to customers what data we collect, how, and why.
-- Choose license, and define liability. (needed as we should make sure we are not liable for poorly managed servers)
-  
-### Milestone 2
-- Make a self hostable server using PostgreSQL
-- Make a documented docker doplyable by any computer enthousiast
-- Add tools for during events : tournament tree, friend finder, group maker, etc.
-  
-### Milestone 3
-- Add an authentification mechanism on the self hostable version (alternative to google Oauth, inside the server)
-- Add integrated payment methods
-- Design a way to make enrollments to servers simple and quick, add a way to follow a server's events via a link and a screen to see what servers we follow.
-- Design a sales plan to sell tailored options to big organisations to increase adoption.
-### Milestone 4
-- Setup a verified partner program
-- Make a hosting plan for non technical customers
-- Making a simple static website to advertise and group documentation (more friendly towards non technical people than the github page)
+The MVP development is planned to be executed over a 14-week time period. We will also define milestones so that we make sure we are on time and to evaluate our progress better.
 
-## Development Resources
+We will need to 1 front end dev, 1 UI designers, 1 backend developer and 1 software tester
+We decided to start with working with EPFL.
 
-Due to the hosting plan, we only need to find budget for the developpers, and the current milestones should be reacheable with a team of 3. One UI developper, one backend developper and a person technical enough to help with documentations and able to sell the product to big organisations.
 
-The four milestones should be doable in 12 weeks, but we obviously need some reserves for potential problems.
+**Milestone 1:** Documentation and Design completion
 
-The later ressources should be paid by partners willing to get more functionality and maintenance of their product.
 
-## Deployment Resources
+- Reading documentation about EPFL APIs, in particular related to authentication (backend developper)
+- Tequila registration and integration (backend developer)
+- Tests to check EPFL API status (software tester)
+- Create proper UI for private chats, including the creation of the channel by a user with another one they follow and the inner messages (UI designer + front-end developer)
 
-The only fees is the initial app store fee, and analytics server, but we could use the free tier of google analytics.
-For milestone 4, we can start selling hosting by setting up firebase for the customer and taking a small fee, once the buisness grows, we can use the profit to buy our own servers using the postgress version and augment profit margin.
+| Sprint/Week Number | Objective        | Outcomes                            |
+| :----------------- | :--------------- | :---------------------------------- |
+| Week 1             | Documentation    | EPFL API Investigation              |
+| Week 2             | Technical Setup  | Configure Tequila Auth              |
+|                    |                  | Setup mock version of EPFL's        |
+|                    |                  | authentication system for tesing    |
+| Week 3             | Design for chats | Chat UI components ready to be used |
 
-## Maintenance and Upkeep
 
-Each server hosted by us will have a garenteed revenue, as we only host for paying organisers, and don't expect revenue from participants, so server maintenance should not be a concern. Depending on who we partner with, we could go open source to get the community involved, or we can charge for custom functionality and tailored experience for each partner.
+**Milestone 2** Finish authentication testing and Features development
+
+
+- With EPFL mock integration in place, everything related to authentification will have to be extensively tested (software tester)
+- Integration of private chats within the application by using components previously defined. Use the already defined functions / create to link the UI and Firebase. (front end developer)
+- Reading documentation about PayPal and paying attention to RESTful APIs for processing payments, managing accounts, and handling transactions (backend developer)
+
+| Sprint/Week Number | Objective              | Outcomes                           |
+| :----------------- | :--------------------- | :--------------------------------- |
+| Week 4             | Testing authentication | Integration of authentication done |
+| Week 5             | Chats integration      | Private chats integration done     |
+| Week 6             | Documentation          | Good understanding of PayPal's API |
+
+
+**Milestone 3** Features development continued
+
+
+- Design payment flow with proper UI to prepare payment integration (UI designer + front-end developper)
+- Use PayPal SDKs or API endpoints to implement payment processing,
+- Set up a PayPal developer account and create sandbox (test) accounts for simulating transactions without involving real money. Also, generate API credentials (Client ID and Secret) for authenticating the app with PayPal's servers.
+
+
+| Sprint/Week Number | Objective             | Outcomes                           |
+| :----------------- | :-------------------- | :--------------------------------- |
+| Week 7             | UI design for payment | Integration of authentication done |
+| Week 8             | Payment integration   | Payment feature integrated         |
+| Week 9             | Testing               | Fully-functional payment feature   |
+
+
+**Milestone 4** Initial Rollout and Feature Iterations for PMF
+
+
+- Rollout app to alpha testers
+- Polish product and deliver it
+
+
+| Sprint/Week Number | Objective         | Outcomes                         |
+| :----------------- | :---------------- | :------------------------------- |
+| Week 10/11         | Alpha Testing     | Deployed app to production       |
+|                    |                   | Monitored app performance        |
+|                    |                   | Gathered user insights/analytics |
+|                    |                   | Fix small issues if needed       |
+| Week 12            | Feature Iteration | Optimize user experience         |
+| Week 13            | Beta Testing      | Initiate marketing               |
+|                    |                   | Getting users on the app         |
+| Week 14            | Full Rollout      | Promote the app widely           |
+
