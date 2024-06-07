@@ -1,7 +1,7 @@
-# Timeline/Resource Planning
+# Timeline
 
 ## Execution Roadmap
-We decided to define three milestones, that should be of two weeks each, of how we want to developp the mvp.
+We decided to define four milestones, that should be of two weeks each, of how we want to developp the mvp.
 Each milestone will contain at least one UI element, one backend element, and a documentation element to make it easier to distribute and parallelize the work.
 
 #### Milestone 1
