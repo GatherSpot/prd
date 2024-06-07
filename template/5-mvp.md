@@ -130,7 +130,7 @@ The success of the MVP for the event application will be evaluated based on seve
 4. **Business Metrics:**
 
 
-   - **Revenue (if applicable):** Track revenue generated through app features such as event fees, ticket sales, or premium subscriptions for advanced event management tools.
+   - **Revenue:** Track revenue generated through app features such as event fees, ticket sales, or premium subscriptions for advanced event management tools.
 
 
    - **Customer Acquisition Cost (CAC):** Calculate the cost to acquire each new user who creates or joins events and compare it to industry benchmarks.
