@@ -2,38 +2,38 @@
 
 ## Frontend
 
-**General Implementation framework:**
+### **General Implementation framework:**
 
 
 The app will be developed in Kotlin, optimized for Android, and will use the Model-View-ViewModel (MVVM) architecture. This approach will ensure a structured and efficient management of the app’s UI and business logic. 
 
 
-**Navigation framework:** 
+### **Navigation framework:** 
 
 
 The navigation for the app will be coded using both the standard Android Library android.navigation:navigation-ui and the Compose standard library android.navigation:navigation-compose. The Compose framework defines the top level destination and the navigation within composable context. The Android Standard Library can be used outside of the scope of Composable in particular when using standard Alert Dialog outside the scope of composable.
 
 
-**UI framework:**
+### **UI framework:**
 
 
 The app UI will be coded using the Jetpack Compose library. This allows for many interconnected components to work together. In addition this helps ensuring the longevity of the app because of the continuous support of Jetpack Compose and easy update to later version by only changing the bom.
 
 
-**Functionality specific framework:**
+### **Functionality specific framework:**
 
 
 Standard libraries are used to perform specific tasks: 
 The Google maps library is used to provide GPS navigation. The zxing library is used for scanning QR codes. The accompanist library is used to request permissions and privileges to the Android OS.
 
 
-**Dynamic UI Rendering Strategy:**
+### **Dynamic UI Rendering Strategy:**
 
 
 The data layer provides method for fetching both remotely and locally data. The ViewModel is tasked with synthesizing the data and exposing fragments to be displayed to the View. The viewModel gets informed by the view any times events susceptible of changing the fragments happen.
 
 
-***Top Level Destinations:***
+### **Top Level Destinations:**
 
 
 The top level destinations are the destination accessible either accessible through the bottom bar of the app or that are part of mandatory user flows when opening the app. 
