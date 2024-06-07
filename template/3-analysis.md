@@ -1,13 +1,6 @@
 # Analysis of the Situation
-
-*What are the competing products in the market today?*
-
-*What are the complementary products in the market today?*
-
-
-
 ## Importance of GatherSpot
-Nowadays, on EPFL campus, there are many flyers to advertise events and gatherings. They are all over the place and make it hard for students to remember the dates they are interested in, etc. This traditional method is not always seen by the target audience.
+Nowadays, on EPFL campus, there are many flyers to advertise events and gatherings. They are all over the place and make it hard for students to remember the dates they are interested in, etc. This traditional method is not always seen by the target audience, and although the current pocketCampus app has an event tab, it is just a barebone list, it has no inscription features, no calendar integration, etc.
 
 GatherSpot is designed to address these common challenges faced by people when it comes to organizing and participating in events. By providing a comprehensive and user-friendly platform, GatherSpot simplifies and enhances the event management process, making it beneficial for both casual users and organizers. 
 
