@@ -1,13 +1,4 @@
 # The Value Proposition
-
-*Describe the value proposition and argue that it is:*
-
-*1. Easy to communicate*
-
-*2. Defensible*
-
-*3. Relevant*
-
 GatherSpot offers a unique value proposition that makes event organization and participation effortless and engaging. Here is how the value proposition aligns with the criteria of being easy to communicate, defensible, and relevant:
 
 1. **Easy to Communicate:**
@@ -18,6 +9,7 @@ GatherSpot offers a unique value proposition that makes event organization and p
 
     - Effortless Social Life Management: With features designed for both event organizers and participants, GatherSpot makes managing social activities effortless and engaging. Whether users want to create or attend events, GatherSpot provides the tools and resources needed to make it happen seamlessly.
 
+    - Leverages commonly used technologies : Gatherspot has a built in notification system, can export events to a calendar, QR code integration, and many more frequently used/ well known technologies out of the box.
 2. **Defensible:**
 
     GatherSpot's value proposition is defensible against competitors due to the following reasons:
