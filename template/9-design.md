@@ -42,29 +42,29 @@ The top level destinations are the destination accessible either accessible thro
 **Login and SignUp:**
  
 
-These screens are part of mandatory user flows. When opening the app for the first time the user isn’t signed in and cannot access any other screen without completing one of the flows associated with these destinations.
+These screens are part of mandatory user flows. When opening the app for the first time, the user isn’t signed in and cannot access any other screen without completing one of the flows associated with these destinations.
 
 
 **Chats:**
 
 
-Lists all the chats we can access
+Lists all the chats we can access.
 
 
 **Events:**
 
 
-Lists Events that we can interact with. This screen contains 5 tabs to show different subsets of events: Mine for events organized by the user, Feed for events matching the settings of the profile, Planned for future events the user registered to, Followed for events organized by people followed by the user and Attended for passed events that were attended.
+Lists Events that we can interact with. This screen contains 5 tabs to show different subsets of events: 'Mine' for events organized by the user, 'Feed' for events matching the settings of the profile, 'Planned' for future events the user registered to, 'Followed' for events organized by people followed by the user, and 'Attended' for passed events that were attended.
 
 **Map:**
 
 
-Browse a map on which the Events are shown.
+Browse a map on which the events are shown.
 
 **Profile:**
 
 
-Display one’s own profile and its editing options
+Display one’s own profile and its editing options.
 
 
 ## Backend
@@ -73,13 +73,13 @@ Display one’s own profile and its editing options
 **Application Logic:**
 
 
-The backend server will host all necessary application logic, enabling the client application to access and consume data from the Gatherspot Firebase server. It will handle communications between different personas
+The backend server will host all necessary application logic, enabling the client application to access and consume data from the Gatherspot Firebase server. It will handle communications between different personas.
 
 
 **Framework:**
 
 
-The backend is comprised of tools provided by google Firebase. This includes Firestore Database for storing data into files and collections but also authentification to provide functions to add Users, authenticate as a user and verify a user with email and Storage used to reference and store big files such as images.
+The backend is comprised of tools provided by Google Firebase. This includes Firestore Database for storing data into files and collections but also authentification to provide functions to add users, authenticate as a user and verify a user with email, as well as storage used to reference and store big files such as images.
 
 
 ## Data Model
@@ -108,7 +108,7 @@ Fields: Id (Primary key) ; Title; Description; eventStartDate; eventEndDate; tim
 
 
 Purpose: Collect user data about how well a passed event went, provide feedback on how well an event was rated as well as how well an organizer was rated in the past.
-Individual rating by a user with id "uid" for the event with id eventID. It is stored in the collection: "event_ratings/$eventID/attendee_ratings" as a document with id: $uid and field: rating. 
+Individual rating by a user with id "uid" for the event with id eventID. It is stored in the collection: "event_ratings/\$eventID/attendee_ratings" as a document with id: $uid and field: rating. 
 
 
 The individual ratings in attendees_ratings are aggregated into a document stored in the collection: "event_ratings" in document with id: "eventID" with fields: average (representing the average of ratings for the event), count (representing the number of ratings for the event), and eventID. This constitutes the event rating.
@@ -150,16 +150,16 @@ Fields: message, senderID(takes value uid), timestamp
 ## Security Considerations
 
 
-To maintain the integrity of the data we need to concern ourselves with writing privileges. At the moment our Firebase database does not discriminate between users and provides them all with the same writing privileges. The following are ideas on how to improve on our Cloud Firestorm’s rules framework.
+To maintain the integrity of the data we need to worry about writing privileges. At the moment our Firebase database does not discriminate between users and provides them all with the same writing privileges. The following are ideas on how to improve our Cloud Firestorm’s rules framework.
 
 
-Many documents have no collision as far as writing is concerned meaning that only one user should write into a document.
+Many documents have no collision as far as writing is concerned, meaning that only one user should write into a document.
 
 
 **Unique write access**
 
 
-Chat messages should never be modified and are each stored in separate document. Therefore the chat messages collection is purely additive in nature and only needs protection against overwriting existing files but no particular authentication check.
+Chat messages should never be modified and are each stored in a separate document. Therefore the chat messages collection is purely additive in nature and only needs protection against overwriting existing files but no particular authentication check.
 
 
 **Single exclusive write access**
@@ -183,7 +183,7 @@ Folders: /ID_LIST/, /organizer_ratings/ and /event_ratings/ are all made to main
 ## Infrastructure and Deployment
 
 
-The app doesn’t require any additional infrastructure at the moment as all changes in the backend data is triggered by some frontend user activity. Therefore when necessary transactions cascade into another causing a user to be  unknowingly complicit in maintaining the coherence of our database. 
+The app doesn’t require any additional infrastructure at the moment as all changes in the backend data are triggered by some frontend user activity. Therefore when necessary transactions cascade into another, it causes the user to be unknowingly complicit in maintaining the coherence of our database. 
 The accessibility of the database is ensured by Firebase.
 
 
@@ -193,13 +193,13 @@ The accessibility of the database is ensured by Firebase.
 **Firebase Connection Test**
 
 
-We have compiled functions meant to communicate with Firebase in classes call Firebase Connection and written tests for them. This is crucial to monitor correct behavior of the app when rolling out new changes but also as a proactive measure to monitoring changes to these services in order to quickly correct failures.
+We have compiled functions meant to communicate with Firebase in classes call FirebaseConnection and written tests for them. This is crucial to monitor correct behavior of the app when rolling out new changes but also as a proactive measure to monitoring changes to these services in order to quickly correct failures.
 
 
 **ViewModel Tests**
 
 
-These tests are possibly also dependent on the success of Firebase Connection Test since they monitor the correct behavior of the viewModels. They should be tested thoroughly in order to ensure the minimum privilege principle is respected
+These tests are possibly also dependent on the success of FirebaseConnectionTest since they monitor the correct behavior of the viewModels. They should be tested thoroughly in order to ensure the minimum privilege principle is respected.
 
 
 

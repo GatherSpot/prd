@@ -1,6 +1,6 @@
 # Analysis of the Situation
 ## Importance of GatherSpot
-Nowadays, on EPFL campus, there are many flyers to advertise events and gatherings. They are all over the place and make it hard for students to remember the dates they are interested in, etc. This traditional method is not always seen by the target audience, and although the current pocketCampus app has an event tab, it is just a barebone list, it has no inscription features, no calendar integration, etc.
+Nowadays, on EPFL campus, there are many flyers to advertise events and gatherings. They are all over the place and make it hard for students to remember the dates they are interested in, etc. This traditional method is not always seen by the target audience, and although the current PocketCampus app has an event tab, it is just a barebone list, it has no inscription features, no calendar integration, etc.
 
 GatherSpot is designed to address these common challenges faced by people when it comes to organizing and participating in events. By providing a comprehensive and user-friendly platform, GatherSpot simplifies and enhances the event management process, making it beneficial for both casual users and organizers. 
 
@@ -12,7 +12,7 @@ Here is an analysis of why such an app would be useful and the problems it aims 
     
     - Organizers: Universities, clubs, and organizations face even more complexity, with communication spread across various channels and platforms. This can lead to inefficiencies and miscommunications.
 
-    Our app centralizes everything from event search with filtering based on location or interests, registration and communication with other participants.
+    Our app centralizes everything from event search with filtering based on location or interests, to registration and communication with other participants.
 
 - Inefficient Attendance Management:
 
@@ -35,9 +35,9 @@ Several apps and platforms offer features similar to GatherSpot, each catering t
 
 Here are 2 of the key competitors:
 
-- Eventbrite: whose features include event creation, promotion, ticket sales, and attendee management. Strengths include strong brand recognition, robust ticketing and payment processing and comprehensive event analytics.
+- Eventbrite: Features include event creation, promotion, ticket sales, and attendee management. Strengths include strong brand recognition, robust ticketing and payment processing and comprehensive event analytics.
 
-- Meetup whose features include event creation, group formation, interest-based event discovery, RSVPs. Strengths include a large and active community.
+- Meetup: Features include event creation, group formation, interest-based event discovery, RSVPs. Strengths include a large and active community.
 
 Eventbrite offers a significant feature not available in GatherSport: an integrated ticketing and payment processing system. This is especially important when it comes to event organizers who can set up ticket sales directly within the platform, eliminating the need for third-party services.
 

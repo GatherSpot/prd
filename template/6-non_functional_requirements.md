@@ -12,7 +12,7 @@
    - **Federal Act on Data Protection (FADP):** Adherence to FADP regulations is crucial for data protection at the federal level in Switzerland, emphasizing principles such as data minimization, purpose limitation, and data security, which should extend to Firebase data storage and processing.
 
 
-   - **Swiss Financial Market Supervisory Authority (FINMA) Regulations:** If the app involves financial transactions, such as for paid events (implemented as a future feature), compliance with FINMA regulations is necessary to ensure data security and confidentiality, even within Firebase's ecosystem.
+   - **Swiss Financial Market Supervisory Authority (FINMA) Regulations:** If the app involves financial transactions, such as paid-for events (implemented as a future feature), compliance with FINMA regulations is necessary to ensure data security and confidentiality, even within Firebase's ecosystem.
 
 
    - **Swiss Federal Act on Banks and Savings Banks:** For banking or financial services within the app, compliance with this act is obligatory to safeguard customer data and ensure the confidentiality of financial transactions, extending to Firebase's data handling procedures.

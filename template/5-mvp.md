@@ -10,7 +10,7 @@ Concretely, we aim to integrate the following services into GatherSpot, which ar
 
 - **Private conversations:** Being able to chat with other users privately and not as part of event chatting groups can be a significant improvement.
 
-- **Version for IOS devices:** Important to reach a broader audience.
+- **Version for iOS devices:** Important to reach a broader audience.
 
 ## Personas and Scenarios
 
@@ -35,10 +35,10 @@ We expect the typical patterns and scenarios to happen like this:
 ## User Stories and Key Features
 
 1. **User Story for university citizens:**
-    - “As an university citizen, I want to be informed of all social events organized inside my university so that I can register if I am interested ” 
+    - “As an university citizen, I want to be informed of all social events organized inside my university so that I can register if I am interested.” 
 
 2. **User Story for event organizers:**
-    - “As an event organizer inside a university, I want to be able to post events so that students can stay informed about all social activities without relying on physical flyers or other outdated methods”
+    - “As an event organizer inside a university, I want to be able to post events so that students can stay informed about all social activities without relying on physical flyers or other outdated methods.”
 
 3. **User Story for participants:**
     - "As a participant, I want to be able to pay the registration fee directly through the app to avoid having to bring money to the event."
@@ -46,8 +46,8 @@ We expect the typical patterns and scenarios to happen like this:
 4. **User story for all users:**
     - "As a user, I want to be able to privately contact any organizer or participant so that I can express my questions or concerns comfortably."
 
-5. **User story for IOS users:**
-    - “As the owner of an IOS device, I still want to be able to use the app so that I can also benefit from the app features”
+5. **User story for iOS users:**
+    - “As the owner of an iOS device, I want to be able to use the app so that I can also benefit from the app features.”
 
 ## Success Criteria
 The success of the MVP for the event application will be evaluated based on several key metrics and qualitative assessments specific to the event management and participation context:
@@ -82,7 +82,7 @@ The success of the MVP for the event application will be evaluated based on seve
 
    - **Customer Acquisition Cost (CAC):** Calculate the cost to acquire each new user who creates or joins events and compare it to industry benchmarks.
 
-   - **Customer Lifetime Value (CLV):** Estimate the total revenue expected from a user over their entire relationship with the app, focusing on repeat event creators and frequent event participants.
+   - **Customer Lifetime Value (CLV):** Estimate the total revenue expected from a user over their entire relationship with the app, focusing on repeated event creators and frequent event participants.
 
 5. **Progress in Discussions with Ecosystem Partners / Investors / Customers:**
 
@@ -94,7 +94,7 @@ The success of the MVP for the event application will be evaluated based on seve
 
 6. **Technical Performance:**
 
-    - **Uptime and Reliability:** Ensure high levels of app uptime and reliability, aiming for minimal downtime and quick recovery from any issues, especially during peak event registration periods.
+    - **Uptime and Reliability:** Ensure high levels of app uptime and reliability, aiming for minimal downtime and quick recovery from any issue, especially during peak event registration periods.
 
    - **Scalability:** Assess the app’s ability to handle increased traffic and user load, particularly during event promotion periods and on the days of major events.
 
@@ -127,13 +127,13 @@ By systematically tracking and analyzing these metrics, we can determine the suc
          We have already implemented basic filtering based on interests and location. 
 
 
-         - Step 1: Gradually collect data on user behavior, such as the types of events they attend, their interactions, and their preferences keeping in mind data we have to ensure data privacy and compliance with regulations.
+         - Step 1: Gradually collect data on user behavior, such as the types of events they attend, their interactions, and their preferences, keeping in mind that we have to ensure data privacy and compliance with regulations.
 
 
          - Step 2: Start with collaborative filtering which is easier to implement and based on the construction of a user-interaction matrix using data previously collected. For user-based collaborative filtering, recommend events that similar users have attended or shown interest in. For item-based collaborative filtering, recommend events similar to those a user has interacted with. 
 
 
-         - Step 3: Evaluate the performance of the collaborative filtering system using appropriate metrics such as precision, recall, or Mean Average Precision (MAP). Repeat all this sequence until having satisfactory results (MAP score > 0.5 would be great)
+         - Step 3: Evaluate the performance of the collaborative filtering system using appropriate metrics such as precision, recall, or Mean Average Precision (MAP). Repeat all this sequence until having satisfactory results (MAP score > 0.5 would be great).
 
 
    - **Event Sponsorship:**
@@ -154,4 +154,4 @@ By systematically tracking and analyzing these metrics, we can determine the suc
       - Step 3: Reach out to potential sponsors to discuss partnership opportunities and negotiate sponsorship agreements.
       
 
-Starting with gamification, then incorporating a recommender system, and finally introducing event sponsorship makes sense, as we aim to create the best possible product to attract potential sponsors. By prioritizing these features in this sequence, we ensure that GatherSpot evolves into a comprehensive and compelling platform that not only delights users but also offers tangible benefits to potential sponsors, thereby increasing our chances of securing valuable sponsorship deals.
+Starting with gamification, then incorporating a recommendation system, and finally introducing event sponsorship makes sense, as we aim to create the best possible product to attract potential sponsors. By prioritizing these features in this sequence, we ensure that GatherSpot evolves into a comprehensive and compelling platform that not only delights users but also offers tangible benefits to potential sponsors, thereby increasing our chances of securing valuable sponsorship deals.
