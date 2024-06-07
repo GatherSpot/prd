@@ -8,6 +8,8 @@ Each milestone will contain at least one UI element, one backend element, and a 
 - Make app database agnostic (support both firebase and PostgreSQL)
 - Write documentation to deploy easily on firebase Spark plan (any person confortable with a computer should be able to do it)
 - First design of the during event screen
+- Write clearly to customers what data we collect, how, and why.
+- Choose license, and define liability. (needed as we should make sure we are not liable for poorly managed servers)
   
 ### Milestone 2
 - Make a self hostable server using PostgreSQL
